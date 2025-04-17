@@ -6,6 +6,14 @@ The Adsplatter mobile application.
 
 I will finish the README.md when I feel more inspired ¯\\_('-`)_/¯
 
+### Install & run
+
+```bash
+$ cd mobile
+$ flutter create .
+$ flutter run
+```
+
 ### Copyright Notice
 
 © 2024 Adsplatter. All rights reserved.
