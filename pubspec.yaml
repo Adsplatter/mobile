@@ -2,9 +2,9 @@ name: adsplatter
 description: "Adsplatter's mobile app."
 version: 1.0.0+1
 
-repository: https://github.com/adsplatter/flutter-framework
-homepage: https://github.com/adsplatter/flutter-framework
-issue_tracker: https://github.com/adsplatter/flutter-framework/issues
+repository: https://github.com/adsplatter/mobile
+homepage: https://github.com/adsplatter/mobile
+issue_tracker: https://github.com/adsplatter/mobile/issues
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -20,6 +20,8 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  flutter_localizations:
+    sdk: flutter
   flutter:
     sdk: flutter
 
@@ -27,10 +29,26 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
 
+  # Flutter localization (L10n) generator
+  flutter_localized_locales: ^2.0.5
+
+  # Persistent storage
+  shared_preferences: ^2.2.3
+
+  # Image parsing & more
+  image: ^4.2.0
+
+  # Information about the device
+  package_info_plus: ^8.0.0
+
   # Import the Adsplatter's flutter-framework package from GitHub
   framework:
     git:
       url: https://github.com/Adsplatter/flutter-framework
+
+# Other packages
+dependency_overrides:
+  intl: 0.17.0-nullsafety.2
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +68,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  # Localization
+  generate: true
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -66,6 +86,26 @@ flutter:
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
+  assets:
+    - assets/
+    - assets/icon/
+    - assets/icon/android/
+    - assets/icon/android/hdpi/
+    - assets/icon/android/mdpi/
+    - assets/icon/android/xhdpi/
+    - assets/icon/android/xxhdpi/
+    - assets/icon/android/xxxhdpi/
+    - assets/icon/ios/
+    - assets/icon/ios/2x/
+    - assets/icon/ios/3x/
+    - assets/icon/web/
+    - assets/icon/web/24/
+    - assets/icon/web/58/
+    - assets/icon/web/64/
+    - assets/icon/web/256/
+    - assets/icon/web/2048/
+    - assets/icon/flags/
+    - assets/lottiefiles/
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a

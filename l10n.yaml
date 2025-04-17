@@ -1,0 +1,15 @@
+arb-dir: lib/skeleton/src/i18n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
+output-class: AppLocalizations
+preferred-supported-locales:
+  - en
+  - it
+  - de
+  - es
+  - fr
+fallbacks:
+  es: en
+  de: en
+  fr: en
+  it: en

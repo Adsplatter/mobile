@@ -1,0 +1,31 @@
+{
+  "@@locale": "en",
+  "appTitle": "Adsplatter",
+  "@appTitle": {
+    "description": "Adsplatter"
+  },
+  "updateRequired": "An update is required to continue using the Adsplatter Mobile Application.",
+  "@updateRequired": {
+    "description": "Shown when the app requires a mandatory update."
+  },
+  "updatePrompt": "Please download the latest version of the application from the app store.",
+  "@updatePrompt": {
+    "description": "Shown when the user needs to update the app to continue using it."
+  },
+  "nothingHere": "Oops, There is nothing here!",
+  "@nothingHere": {
+    "description": "Displayed when the user navigates to an empty or unaccessible page."
+  },
+  "noInternetConnection": "No Internet Connection",
+  "@no_internet_connection": {
+    "description": "Displayed when the device cannot establish an internet connection, indicating network issues."
+  },
+  "checkInternetConnection": "Please check your internet connection and try again.",
+  "@checkInternetConnection": {
+    "description": "Displayed when the user is advised to check their internet connection and attempt the action again."
+  },
+  "noDataAvailable": "No data available",
+  "@noDataAvailable": {
+    "description": "Displayed when there is no data to show to the user."
+  }
+}
